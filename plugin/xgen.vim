@@ -1,8 +1,8 @@
 " File: xgen.vim
 " Author: Wolf Sluyterman van Langeweyde
 "
-" $Name: xgen_2_0_0 $
-" $Id: xgen.vim,v 1.3 2003/05/18 18:42:24 Wolf Exp $
+" $Name: xgen_2_0_1 $
+" $Id: xgen.vim,v 1.4 2003/06/18 20:45:27 Wolf Exp $
 " $Source: d:\\CvsRoot/trees/kits/vim/xgen.vim,v $
 "
 " Overview
@@ -121,7 +121,7 @@ function! Set_enable_dtd()
 :amenu xGen.dtd.MIN.ATTRIBUT-VALUE-SELECT	:.,.s/ CDATA / (???\|???) /<ESC>^
 :amenu xGen.dtd.MIN.-SEPid179136- :
 :amenu xGen.dtd.MIN.ELEMENT-ANY	o<!ELEMENT ???name ANY><ESC>
-:amenu xGen.dtd.MIN.ELEMENT-EMPTY	o<!ELEMENT ???name EMTPY><ESC>
+:amenu xGen.dtd.MIN.ELEMENT-EMPTY	o<!ELEMENT ???name EMPTY><ESC>
 :amenu xGen.dtd.MIN.ELEMENT-PCDATA	o<!ELEMENT ???name (#PCDATA)><ESC>
 :amenu xGen.dtd.MIN.ELEMENT-SELECT	o<!ELEMENT ???name (???\|???)><ESC>
 :amenu xGen.dtd.MIN.ELEMENT-SEQUENCE	o<!ELEMENT ???name (???,???)><ESC>
