@@ -1,0 +1,73 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=456
+
+" Overview
+" --------
+"
+" xgen.vim generates a menu for GENeration Xml-Element templates
+" for different W3C-Recommondations.
+"
+" In addition to generation you can browse through the
+" recommendation structure and have some simple but useful commands.
+"
+" You can find the following recommondations in the xGen-menu
+" if they are enabled. Each one can be enable and disabled in
+" this menu. If all an enable, the performance might be influenced.
+" 
+" dtd:  Document Type Definitions for XML 1.0
+"
+" fo:   Extensible Stylesheet Language (XSL) Version 1.0
+"       Recommendation 15 October 2001
+"
+" html: Extensible HTML version 1.0 Strict DTD
+"
+" svg:  SVG 1.0 2001 September 04
+"
+" xsd : XML Schema 
+"       Recommendation, 2 May 2001 
+"
+" xsl : XSL Transformations (XSLT) Version 1.0
+"       Recommendation 16 November 1999
+"
+"
+"
+"
+" XML-menu structure
+" --------------
+"
+" TEMPLATES  : to generate some of my favourite templates
+" MIN        : to generate the element with all required attributes
+" MAX        : to generate the element with all attributes
+" ------------
+" ROOTS      : shows all root-elements and generates them, including
+"              the <?xml ... and the xmlns
+" BROWSE     : shows all possible child element for all elements,
+"              so you can analyse the structure
+" ------------
+" FILL       : after creation, the elements are empty with a 
+"              closing />. Use FILL to splitt the element
+" >>         : the creation in done in the next line. Often
+"              it is useful to shift the new element to the right
+" <<         : to correct a shift to the left
+" AUTOINDENT : normaly generation is most efficient with autoindent
+"
+"
+" DTD-menu structure
+" ------------------
+"
+" For DTD, only MIN, AUTOINDENT, >> and << are suported.
+"
+" The MIN-Structure inside the dtd.MIN, can be used in a
+" comparable way. The items sould be "self explaining". Some
+" specials are:
+" 
+" ATTRIBUTE-FIXED    : CDATA FIXED
+" ATTRIBUTE-IMPLIED  : CDATA IMPLIED
+" ATTRIBUTE-REQUIRED : CDATA REQUIRED
+" ATTRIBUTE-VALUE    : CDATA VALUE
+" ATTRIBUTE-VALUE-*  : replaces " CDATA " in the for about cases
+"
+" DOCTYPE-EXTERNAL   : external SYSTEM DOCTYPE
+" DOCTYPE-MIXED      : mixed SYSTEM DOCTYPE
+" DOCTYPE-PUBLIC     : replaces " SYSTEM " to PUBLIC in the two
+"                      above cases
+"
